@@ -21,7 +21,7 @@ public class Main1 {
 		
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		
-		System.getenv("api_key1");
+		
 		try {
 			URL url = new URL(BASE_URL+"DE?access_key="+System.getenv("api_key"));
 			HttpURLConnection con = (HttpURLConnection)url.openConnection();
@@ -38,6 +38,8 @@ public class Main1 {
 			
 			
 			System.out.println(country);
+			
+			
 			
 			rd.close();
 			
