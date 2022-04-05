@@ -4,7 +4,7 @@ public class Country {
 
 	private String name;
 	private String capital;
-	private String currency;
+	private String fullName;
 	
 	public String getName() {
 		return name;
@@ -18,17 +18,18 @@ public class Country {
 	public void setCapital(String capital) {
 		this.capital = capital;
 	}
-	public String getCurrency() {
-		return currency;
+	public String getFullName() {
+		return fullName;
 	}
-	public void setCurrency(String currency) {
-		this.currency = currency;
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
 	}
-	
 	@Override
 	public String toString() {
-		return "Country [name=" + name + ", capital=" + capital + ", currency=" + currency + "]";
+		return "Country [name=" + name + ", capital=" + capital + ", fullName=" + fullName + "]";
 	}
+	
+	
 	
 	
 	
